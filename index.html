@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head> 
+        <meta charset="UTF-8">
+        <title>css target exercice 1</title>
+        <style>
+            html {
+                height: 100%;
+                background:none;
+            }
+            body {
+                height: 100%;
+                background: none;
+            }
+            * {
+                height: 42px;
+                background-color: red;
+                /*largeur | style | couleur */
+                border: 1px solid black;
+                padding:5px;
+                margin: 0;
+            }
+            section div {
+                background-color: blue;
+            }
+            div div {
+                background-color: yellow;
+            }
+            section section p {
+                background-color: purple;
+            }
+            body > section {
+                background-color: pink;
+            }
+            div + div {
+                background-color: azure;
+            }
+            div + section {
+                background-color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div></div>
+            <p><span></span></p>
+        </section>
+        <div>
+            <div></div>
+        </div>
+        <div></div>
+        <section>
+            <section>
+                <p><span></span></p>
+            </section>
+        </section>
+        <div></div> 
+    </body>
+</html>
